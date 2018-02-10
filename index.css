@@ -20,8 +20,14 @@ h1 {
 
 }
 
+.image {
+  min-width: 40vw;
+}
+
 img {
   height: 25em;
+  width: 22em;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   border: .5em groove grey;
@@ -80,9 +86,23 @@ aside {
   background-color: #BFB7B6;
 }
 
+aside > p {
+  padding-bottom: 6em;
+}
+
+aside > p:last-child {
+  padding-bottom: 0;
+}
+
 footer {
   margin-top: 1em;
   padding: 1em;
   border: 5px groove grey;
   background-color: #BFB7B6;
+}
+
+footer > nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
